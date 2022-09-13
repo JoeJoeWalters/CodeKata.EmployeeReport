@@ -17,6 +17,7 @@ namespace EmployeeReport.Kata.Tests
 
         [Theory]
         [InlineData("asc", new string[] { "max", "mike", "nina", "sepp" })]
+        [InlineData("desc", new string[] { "sepp", "nina", "mike",  "max" })]
         public void Get_Employees_Over_Age(string direction, string[] expectedOrder)
         {
             // ARRANGE
